@@ -1,0 +1,88 @@
+#home {
+  background-image: url('/images/fundoinicial.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 75vh;
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.541);
+  background-position-y: -80px;
+  font-family: "Poiret One", sans-serif;
+}
+
+#home > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#home h2 {
+  font-size: 70px;
+}
+
+#home p {
+  font-size: 25px;
+  color: black;
+}
+
+#redes-sociais {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+#redes-sociais img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+#redes-sociais img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+  #home {
+    height: 60vh;
+  }
+
+  #home h2 {
+    font-size: 3rem;
+  }
+
+  #home p {
+    font-size: 1.2rem;
+  }
+
+  #redes-sociais img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  #home {
+    height: 50vh;
+    margin-bottom: 30px;
+    padding: 0 1rem;
+  }
+
+  #home h2 {
+    font-size: 2rem;
+  }
+
+  #home p {
+    font-size: 1rem;
+  }
+
+  #redes-sociais img {
+    width: 25px;
+    height: 25px;
+  }
+}

@@ -1,0 +1,124 @@
+.loagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#localeagendamento {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  flex-wrap: wrap;
+}
+
+#contato {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  min-width: 300px;
+}
+
+#contato h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #000000;
+}
+
+.formagendamento {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+  max-width: 320px; 
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.form-row > div {
+  flex: 1;
+  min-width: 200px;
+}
+
+input,
+textarea,
+button,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #4d643c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+
+  width: 100%;       
+  max-width: 300px;     
+  display: block;
+  margin: 0 auto;     
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+#local {
+  flex: 1;
+  min-width: 300px;
+}
+
+#local > iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  #localeagendamento {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-row > div {
+    min-width: 100%;
+  }
+}

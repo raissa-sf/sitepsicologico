@@ -1,0 +1,25 @@
+#publico-alvo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 100px 50px;
+  text-align: justify;
+  gap: 40px; 
+  flex-wrap: wrap; 
+}
+
+.publico-alvo {
+  flex-basis: 50%;
+  margin: 0;
+  min-width: 280px; 
+}
+
+.condicoes-tratadas {
+  margin-top: 70px;
+  color: var(--letras);
+}
+
+.condicoes-tratadas > ul {
+  padding-left: 20px; 
+  margin: 0;
+}

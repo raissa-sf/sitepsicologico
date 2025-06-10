@@ -1,0 +1,121 @@
+.artigototal {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.artigos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.artigo {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.artigo_img {
+  width: 80px;
+  display: block;
+}
+
+.artigo_link {
+  text-decoration: none;
+  color: var(--letras);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artigo:hover {
+  background-color: rgba(185, 185, 185, 0.137);
+}
+
+.artigo_subtitulo {
+  width: 80%;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 8px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.reflexoes {
+  background-color: #a3bb8ba0;
+  padding: 30px 20px;
+}
+
+.reflexoes > h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.textoreflexoes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 0 20px;
+}
+
+.reflexaoUm,
+.reflaxaoDois {
+  flex: 1 1 45%;
+  text-align: justify;
+}
+
+.dicas {
+  margin: 50px 20px;
+  text-align: center;
+}
+
+.dicas > h2 {
+  margin-bottom: 30px;
+}
+
+.textodicas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.dicaa {
+  flex: 1 1 45%;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .artigo {
+    width: 100%;
+    height: auto;
+  }
+
+  .artigo_subtitulo {
+    white-space: normal;
+  }
+
+  .reflexaoUm,
+  .reflaxaoDois,
+  .dicaa {
+    flex: 1 1 100%;
+  }
+
+  .textoreflexoes,
+  .textodicas {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
