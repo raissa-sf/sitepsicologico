@@ -1,0 +1,114 @@
+✅ 1. Criar usuário (POST /cadastro)
+
+curl -X POST http://localhost:5000/cadastro \
+-H "Content-Type: application/json" \
+-d '{
+  "email": "aquila@example.com",
+  "nome": "Aquila",
+  "senha": "senha1223",
+  "telefone": "11999999999",
+  "cpf": "123.456.779-00",
+  "tipo_usuario": "paciente"
+}'
+
+curl -X POST http://localhost:5000/cadastro \
+-H "Content-Type: application/json" \
+-d '{
+  "email": "raissa@example.com",
+  "nome": "Raissaa",
+  "senha": "senha1223",
+  "telefone": "11999999999",
+  "cpf": "123.456.779-01",
+  "tipo_usuario": "paciente"
+}'
+
+curl -X POST http://localhost:5000/cadastro \
+-H "Content-Type: application/json" \
+-d '{
+  "email": "thaina@example.com",
+  "nome": "Thaina",
+  "senha": "senha1223",
+  "telefone": "11999999999",
+  "cpf": "123.456.779-02",
+  "tipo_usuario": "paciente"
+}'
+
+curl -X POST http://localhost:5000/cadastro \
+-H "Content-Type: application/json" \
+-d '{
+  "email": "mariane@example.com",
+  "nome": "Mariane",
+  "senha": "senha1223",
+  "telefone": "11999999999",
+  "cpf": "123.456.779-03",
+  "tipo_usuario": "paciente"
+}'
+
+curl -X POST http://localhost:5000/cadastro \
+-H "Content-Type: application/json" \
+-d '{
+  "email": "leticia.psico@example.com",
+  "nome": "Leticia Dias Cunha",
+  "senha": "senha123",
+  "telefone": "11999999999",
+  "cpf": "12345678904",
+  "tipo_usuario": "psicologo"
+}'
+
+
+✅ 2. Listar todos os usuários (GET /usuarios)
+
+curl http://localhost:5000/usuarios
+
+✅ 3. Buscar um usuário por ID (GET /usuarios/<id>)
+
+curl http://localhost:5000/usuarios/1
+
+
+✅ 4. Atualizar um usuário por ID (PUT /usuarios/<id>)
+
+curl -X PUT http://localhost:5000/usuarios/1 \
+-H "Content-Type: application/json" \
+-d '{
+  "email": "ana@example.com",
+  "nome": "Ana Giancoli Atualizado",
+  "senha": "senha1223",
+  "telefone": "11999999999",
+  "cpf": "123.456.789-00",
+  "tipo_usuario": "paciente"
+}'
+
+
+✅ 5. Deletar um usuário por ID (DELETE /usuarios/<id>)
+
+curl -X DELETE http://localhost:5000/usuarios/1
+
+
+Criar uma consulta
+
+curl -X POST http://localhost:5000/consultas \
+  -H "Content-Type: application/json" \
+  -d '{
+    "data": "2025-06-01",
+    "horario": "14:30",
+    "paciente_id": 1,
+    "psicologo_id": 2
+}'
+
+Listar consultas 
+
+curl http://localhost:5000/consultas
+
+Atualizar consultas 
+
+curl -X PUT http://localhost:5000/consultas/1 \
+  -H "Content-Type: application/json" \
+  -d '{
+    "data": "2025-06-10",
+    "horario": "15:00",
+    "psicologo_id": 3
+}'
+
+Excluir uma consulta
+
+curl -X DELETE http://localhost:5000/consultas/1
